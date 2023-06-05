@@ -41,6 +41,7 @@ public class Livro {
         System.out.println("Autor: " + autor);
         System.out.println("Ano de publicação: " + ano);
         System.out.println("Disponibilidade: " + disponibilidade);
+        System.out.println("=-=-=-=-=-=-=-=-=-=-=-=");
     }
 
 }

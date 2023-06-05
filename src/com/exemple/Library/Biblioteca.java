@@ -17,5 +17,18 @@ public class Biblioteca {
     public void removerLivro(Livro livro) {
         livrosDisponiveis.remove(livro);
     }
-
-}
+    public Livro buscarLivroPorTitulo(String titulo){
+        for (Livro livro : livrosDisponiveis){
+            if(livro.getTitulo().equalsIgnoreCase(titulo)){
+                return livro;
+            }
+        }return null;
+    }
+    public void listarLivrosDisponiveis(){
+        for (Livro livro : livrosDisponiveis){
+            if (livro.getDisponibilidade()){
+                System.out.println(livro.getTitulo());
+        }
+    }
+        System.out.println("-=-=-=-=-=-=-=-=-");
+}}
